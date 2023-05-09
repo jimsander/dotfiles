@@ -6,3 +6,5 @@ Include things like
   `brew bundle dump`
 - dotfiles setup script
 
+
+Any files with TOKENS need to be encrypted with [AGE]()

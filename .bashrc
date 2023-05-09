@@ -80,3 +80,4 @@ export AWS_DEFAULT_PROFILE=platformdev
 export PATH="/Users/jimsander/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
 alias dot='git --git-dir=/Users/jimsander/.dotfiles --work-tree=/Users/jimsander'
+export SOPS_AGE_KEY_FILE="/Users/jimsander/.sops/jds-age.txt"
