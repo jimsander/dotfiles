@@ -17,3 +17,8 @@ dot push --set-upstream origin main
 echo $(basename $localGitDir) >> .gitignore
 ```
 
+## For this repo, use the `dot`
+dot status
+dot add <file>
+dot commit -a -m "blah"
+dot push
