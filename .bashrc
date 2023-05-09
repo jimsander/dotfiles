@@ -33,7 +33,6 @@ alias flushdns='sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder'
 export PATH="/opt/homebrew/opt/openjdk@11/bin:$PATH"
 export CPPFLAGS="-I/opt/homebrew/opt/openjdk@11/include"
 
-export AWS_PROFILE=jds-east1
 
 ## Task Warrior Aliases
 ta() { tid=$1; shift; command task $tid annotate \"$*\"; set +x; }
@@ -74,10 +73,17 @@ which helm 2>/dev/null >&2 && \
   complete -C /opt/homebrew/bin/terraform terraform
 
 set -o vi
-export AWS_DEFAULT_PROFILE=platformdev
+export AWS_DEFAULT_PROFILEj=platformdev
+export AWS_PROFILE=${AWS_DEFAULT_PROFILE:-jds-east1}
 
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
 export PATH="/Users/jimsander/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
+#
 alias dot='git --git-dir=/Users/jimsander/.dotfiles --work-tree=/Users/jimsander'
 export SOPS_AGE_KEY_FILE="/Users/jimsander/.sops/jds-age.txt"
+
+which nvim 2>/dev/null >&2 && \
+    alias vi="nvim" && \
+    alias vim="nvim" && \
+    alias view="nvim -R"
