@@ -1,0 +1,7 @@
+alias fcpx="cd ~/Documents/Projects/FCPX"
+alias jdsu="ssh -p 10022 jdsubuntu1"
+alias jdsu2="ssh -p 10022 jdsubuntu2"
+alias jdsdrop2="ssh -p 10022 jdsdrop2.jimsander.me"
+alias jdskubec1="ssh -p 10022 jdskubecontrol1"
+alias jdskuben1="ssh -p 10022 jdskubenode1"
+alias jdskuben2="ssh -p 10022 jdskubenode2"

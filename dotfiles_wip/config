@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = true
+	ignorecase = true
+	precomposeunicode = true
+[status]
+	showUntrackedFiles = no
+[remote "origin"]
+	url = https://github.com/jimsander/dotfiles
+	fetch = +refs/heads/*:refs/remotes/origin/*

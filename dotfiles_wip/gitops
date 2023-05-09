@@ -1,0 +1,12 @@
+## GitOps Common command
+while read tool; do
+  [[ -n "$(which $tool)" ]] && source <($tool completion bash)
+done <<LIST
+flux
+kubectl
+kustomize
+nerdctl
+
+LIST
+
+[[ -n "$(which nerdctl)" ]] && alias docker="nerdctl"  

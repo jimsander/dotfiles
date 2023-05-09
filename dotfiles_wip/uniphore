@@ -1,0 +1,6 @@
+
+# Uniphore Platform Dev login
+export AWS_DEFAULT_PROFILE=platformdev
+
+alias uniaws='aws sso login --profile platformdev && \
+aws eks --region us-east-2 update-kubeconfig --name uniphore-dev-us-eks-platform --profile platformdev'

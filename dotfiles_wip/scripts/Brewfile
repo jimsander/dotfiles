@@ -1,0 +1,305 @@
+tap "derailed/k9s"
+tap "fluxcd/tap"
+tap "garden-io/garden"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/core"
+tap "homebrew/services"
+tap "norwoodj/tap"
+tap "twilio/brew"
+tap "ubuntu/microk8s"
+tap "xwmx/taps"
+# Color management engine supporting ICC profiles
+brew "little-cms2"
+# Image format providing lossless and lossy compression for web images
+brew "webp"
+# New file format for still image compression
+brew "jpeg-xl"
+# Codec library for encoding and decoding AV1 video streams
+brew "aom"
+# Tool for generating GNU Standards-compliant Makefiles
+brew "automake"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.11"
+# Official Amazon AWS command-line interface
+brew "awscli"
+# GNU database manager
+brew "gdbm"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.10"
+# Microsoft Azure CLI 2.0
+brew "azure-cli"
+# Encode and decode base64 files
+brew "base64"
+# Bourne-Again SHell, a UNIX command interpreter
+brew "bash"
+# Programmable completion for Bash 4.2+
+brew "bash-completion@2"
+# Parser generator
+brew "bison"
+# Interface bandwidth monitor
+brew "bmon"
+# Modern, simple TCP tunnel in Rust that exposes local ports to a remote server
+brew "bore-cli"
+# Powerful command-line bookmark manager
+brew "buku"
+# Core application library for C
+brew "glib"
+# Portable Foreign Function Interface library
+brew "libffi"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
+# Encrypt and decrypt files and streams
+brew "ccrypt"
+# Tool to obtain certs from Let's Encrypt and autoenable HTTPS
+brew "certbot"
+# CloudFlare's PKI toolkit
+brew "cfssl"
+# Ruby environment tool
+brew "chruby"
+# OpenType text shaping engine
+brew "harfbuzz"
+# Create high-quality charts from the command-line
+brew "clip"
+# Cloudflare Tunnel client (formerly Argo Tunnel)
+brew "cloudflared"
+# Cross-platform make
+brew "cmake"
+# Command-line tool to manage cert-manager
+brew "cmctl"
+# GNU File, Shell, and Text utilities
+brew "coreutils"
+# Get a file from an HTTP, HTTPS or FTP server
+brew "curl"
+# CLI tool to run policies against Kubernetes manifests YAML files or Helm charts
+brew "datree"
+# Update dynamic DNS entries
+brew "ddclient"
+# Measure DNS performance by simulating network conditions
+brew "dnsperf"
+# Pack, ship and run any application as a lightweight container
+brew "docker"
+# Platform keystore credential helper for Docker
+brew "docker-credential-helper"
+# Command-line tool for DigitalOcean
+brew "doctl"
+# Convert text between DOS, UNIX, and Mac formats
+brew "dos2unix"
+# Development kit for the Java programming language
+brew "openjdk"
+# Command-line interface for Cyberduck (a multi-protocol file transfer tool)
+brew "duck"
+# Simple command-line tool for creating clusters on Amazon EKS
+brew "eksctl"
+# Cross-platform C++ GUI toolkit
+brew "wxwidgets"
+# Programming language for highly scalable real-time systems
+brew "erlang"
+# GNU Transport Layer Security (TLS) Library
+brew "gnutls"
+# Image processing and image analysis library
+brew "leptonica"
+# Subtitle renderer for the ASS/SSA subtitle format
+brew "libass"
+# Blu-Ray disc playback library for media players like VLC
+brew "libbluray"
+# Framework for layout and rendering of i18n text
+brew "pango"
+# OCR (Optical Character Recognition) engine
+brew "tesseract"
+# Play, record, convert, and stream audio and video
+brew "ffmpeg"
+# Command-line tool to access Weave Flux, the Kubernetes GitOps operator
+brew "fluxctl"
+# Libraries to talk to Microsoft SQL Server and Sybase databases
+brew "freetds"
+# GNU compiler collection
+brew "gcc"
+# GitHub command-line tool
+brew "gh"
+# Interpreter for PostScript and PDF
+brew "ghostscript"
+# Distributed revision control system
+brew "git"
+# Git extension for versioning large files
+brew "git-lfs"
+# GNU Ubiquitous Intelligent Language for Extensions
+brew "guile"
+# GNU Pretty Good Privacy (PGP) package
+brew "gnupg"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
+# Generate introspection data for GObject libraries
+brew "gobject-introspection"
+# GitHub Markdown previewer
+brew "grip"
+# Make JSON greppable
+brew "gron"
+# Kubernetes package manager
+brew "helm"
+# Configurable static site generator
+brew "hugo"
+# ISO/IEC 23008-12:2017 HEIF file format decoder and encoder
+brew "libheif"
+# Library for reading RAW files from digital photo cameras
+brew "libraw"
+# Tools and libraries to manipulate images in many formats
+brew "imagemagick"
+# Tool to measure maximum TCP and UDP bandwidth
+brew "iperf"
+# Update of iperf: measures TCP, UDP, and SCTP bandwidth
+brew "iperf3"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
+# Run local Kubernetes cluster in Docker
+brew "kind"
+# Kubernetes prompt info for bash and zsh
+brew "kube-ps1"
+# FAST Kubernetes manifests validator, with support for Custom Resources!
+brew "kubeconform"
+# Tool that can switch between kubectl contexts easily and create aliases
+brew "kubectx"
+# Template-free customization of Kubernetes YAML manifests
+brew "kustomize"
+# General purpose TCP-IP emulator
+brew "libslirp"
+# C library SSHv1/SSHv2 client and server protocols
+brew "libssh"
+# YAML Parser
+brew "libyaml"
+# Emulator for x86 and PowerPC
+brew "qemu"
+# Linux virtual machines
+brew "lima"
+# Fast, highly customisable system info script
+brew "neofetch"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
+# Net top tool grouping bandwidth per process
+brew "nethogs"
+# Port scanning utility for large networks
+brew "nmap"
+# Platform built on V8 to build network applications
+brew "node"
+# Optimized BLAS library
+brew "openblas"
+# Development kit for the Java programming language
+brew "openjdk@11"
+# ISO-C API and CLI for generating UUIDs
+brew "ossp-uuid"
+# Swiss-army knife of markup format conversion
+brew "pandoc"
+# General-purpose scripting language
+brew "php", restart_service: true
+# Locking and sync for Pip requirements files
+brew "pip-tools"
+# Python dependency management tool
+brew "pipenv"
+# Password generator
+brew "pwgen"
+# Python version management
+brew "pyenv"
+# Cross-platform application and UI framework
+brew "qt@5"
+# Python bindings for v5 of Qt
+brew "pyqt@5"
+# Software environment for statistical computing
+brew "r"
+# Ruby version manager
+brew "rbenv"
+# Rsync for cloud storage
+brew "rclone"
+# Perl-powered file rename script with many helpful built-ins
+brew "rename"
+# Utility that provides fast incremental file transfer
+brew "rsync"
+# Install Ruby, JRuby, Rubinius, TruffleRuby, or mruby
+brew "ruby-install"
+# Collection of tools for managing UNIX services
+brew "runit"
+# Command-line tool for the Amazon S3 service
+brew "s3cmd"
+# Static analysis and lint tool, for (ba)sh scripts
+brew "shellcheck"
+# SOcket CAT: netcat on steroids
+brew "socat"
+# Command-line interface for https://speedtest.net bandwidth tests
+brew "speedtest-cli"
+# Tail multiple Kubernetes pods & their containers
+brew "stern"
+# Open source continuous file synchronization application
+brew "syncthing"
+# Feature-rich console based todo list manager
+brew "task"
+# Shell wrapper for Taskwarrior commands
+brew "tasksh"
+# User interface to the TELNET protocol
+brew "telnet"
+# Tool to build, change, and version infrastructure
+brew "terraform"
+# Powerful free data recovery utility
+brew "testdisk"
+# Linter for Terraform files
+brew "tflint"
+# Command-line time tracking application
+brew "timewarrior"
+# Terminal multiplexer
+brew "tmux"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
+# Vi 'workalike' with many additional features
+brew "vim"
+# Executes a program periodically, showing output fullscreen
+brew "watch"
+# Internet file retriever
+brew "wget"
+# Refactoring tool for Erlang with emacs and Eclipse integration
+brew "wrangler"
+# Access X11 clipboards from the command-line
+brew "xclip"
+# JavaScript package manager
+brew "yarn"
+# Process YAML, JSON, XML, CSV and properties documents from the CLI
+brew "yq"
+# Shell extension to navigate your filesystem faster
+brew "zoxide"
+# Kubernetes CLI To Manage Your Clusters In Style!
+brew "derailed/k9s/k9s"
+# Flux CLI
+brew "fluxcd/tap/flux"
+# Development engine for Kubernetes
+brew "garden-io/garden/garden-cli"
+# Automatically generate markdown documentation for helm charts
+brew "norwoodj/tap/helm-docs"
+# unleash the power of Twilio from your command prompt
+brew "twilio/brew/twilio"
+# unleash the power of Twilio from your command prompt
+brew "twilio/brew/twiliorc", link: false
+# Small, fast, single-package Kubernetes for developers, IoT and edge
+brew "ubuntu/microk8s/microk8s"
+brew "xwmx/taps/notes-app"
+# Tools for the Android SDK
+cask "android-sdk"
+# Visually compare and merge files
+cask "diffmerge"
+# Password manager app
+cask "keepassxc"
+# File archiver
+cask "keka"
+# File system integration
+cask "macfuse"
+cask "mqtt-explorer"
+# Orchestrates virtual Ubuntu instances
+cask "multipass"
+# Reverse proxy, secure introspectable tunnels to localhost
+cask "ngrok"
+# ZFS driver and utilities
+cask "openzfs"
+# Developer experience toolkit used to check, test, merge, and monitor code
+cask "trunk-io"
+# Development environment
+cask "vagrant"
+# Disk encryption software focusing on security based on TrueCrypt
+cask "veracrypt"
+# Remote desktop application focusing on security
+cask "vnc-viewer"
