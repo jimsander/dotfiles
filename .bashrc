@@ -1,5 +1,6 @@
 ## Source Order: #1 
 echo "# PROFILE: .bashrc" >&2
+export DOTFILES="$HOME/dotfiles_wip"
 
 # Early exit if not running interactively to avoid side-effects!
 IGNOREEOF=1
@@ -87,3 +88,7 @@ which nvim 2>/dev/null >&2 && \
     alias vi="nvim" && \
     alias vim="nvim" && \
     alias view="nvim -R"
+
+alias sc="shellcheck"
+
+source_if_exists kuberc

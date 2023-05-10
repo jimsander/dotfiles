@@ -1,3 +1,4 @@
+# shellcheck disable=CODE
 
 # Uniphore Platform Dev login
 export AWS_DEFAULT_PROFILE=platformdev

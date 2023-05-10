@@ -1,3 +1,4 @@
+# shellcheck disable=CODE
 # Note: there is no shebang in this script. This script sets my preferred shell
 # configuration and should be able to be sourced from any Bash-like shell or
 # from Z shell.
@@ -9,9 +10,11 @@ case $- in
 esac
 
 # Set our editor. Some tools use 'VISUAL', some use 'EDITOR'.
-alias vim=nvim
-VISUAL=vim
-EDITOR=vim
+alias vi="nvim"
+alias vim="nvim"
+alias view="nvim -R"
+export VISUAL=vim
+export EDITOR=vim
 
 # Configure the history to make it large and support multi-line commands.
 safe_set histappend                  # Don't overwrite the history file, append.
