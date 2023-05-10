@@ -10,7 +10,7 @@ echo "alias dot='git --git-dir=$localGitDir --work-tree=$HOME'" >> $HOME/.bashrc
 ### Step 2: Clone create the local 
 ```
 # Note: don't use the `dot` alias to clone
-git clone --bare git@github.com:jimsander/dotfiles.git $localGitDir
+git clone --bare https://github.com/jimsander/dotfiles.git $localGitDir
 # Now use `dot` for management of this local bare repo
 dot config --local status.showUntrackedFiles no
 dot push --set-upstream origin main
