@@ -3,7 +3,7 @@ Inspired by a gorilla, er, this [Git Tutorial](https://www.atlassian.com/git/tut
 
 ### Step 1: Setup the `dot` alias and Working Directory
 ```
-localGitDir=$HOME/.dotfile ## Or any non-existing file/dir
+export localGitDir=$HOME/.dotfile ## Or any non-existing file/dir
 alias dot='git --git-dir=$localGitDir --work-tree=$HOME'
 echo "alias dot='git --git-dir=$localGitDir --work-tree=$HOME'" >> $HOME/.bashrc
 ```
