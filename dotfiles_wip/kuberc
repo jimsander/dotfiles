@@ -11,8 +11,37 @@ alias kgp="kubectl get pods"
 alias kns="kubectl config set-context --current --namespace "
 alias kgns="kubectl config view --minify -o jsonpath='{..namespace}'; echo "
 kgetsec () { [[ $# -ge 1 ]] && kubectl get secret $1 -o go-template='{{range $k,$v := .data}}{{"### "}}{{$k}}{{"\n"}}{{$v|base64decode}}{{"\n\n"}}{{end}}' || echo "No secrets passed" >&2; }
-source "/opt/homebrew/opt/kube-ps1/share/kube-ps1.sh"
-PSorig="$PS1"
-export PSkube='$(kube_ps1)'$PS1
-export PS1=$PSkube
-alias rps="[[ \"$PS1\" = \"$PSkube\" ]] && export PS1=\"$PSorig\" || export PS1=\"$PSkube\""
+
+
+function pskube (){
+  kubeps_file="/opt/homebrew/opt/kube-ps1/share/kube-ps1.sh"
+  [[ -f "$kubeps_file" ]] || return 1
+  # https://github.com/jonmosco/kube-ps1
+  get_cluster_short (){  
+    printf "$1"
+  }
+  get_namespace_short (){  # Unused for now
+    #width=${#1}
+    printf "$1"
+  }
+  
+  export KUBE_PS1_CLUSTER_FUNCTION="get_cluster_short"
+  export KUBE_PS1_CTX_COLOR="blue"
+
+  source "$kubeps_file" && \
+    alias koff="kubeoff" && \
+    alias kon="kubeon" && \
+    echo "Toggle kube-prompt: kon/koff" >&2 && \
+    PSKUBE="$(kube_ps1)" && \
+		printf "%s%s" '$(kube_ps1)' $([[ ${#PSKUBE} -gt $(expr $(tput cols) \/ 3) ]] && echo "\\n$PS1" || echo "$PS1")
+
+} # END pskube
+
+kubeps1="/opt/homebrew/opt/kube-ps1/share/kube-ps1.sh"
+if [[ -f "$kubeps1" ]]; then
+  pskube
+	source $kubeps1
+	echo "Toggle kube-prompt: kubeon/kubeoff" >&2
+	export PSkube='$(kube_ps1)'\\n$PS1
+	export PS1="$PSkube"
+fi

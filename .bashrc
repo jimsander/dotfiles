@@ -84,11 +84,7 @@ export PATH="/Users/jimsander/.rd/bin:$PATH"
 alias dot='git --git-dir=/Users/jimsander/.dotfiles --work-tree=/Users/jimsander'
 export SOPS_AGE_KEY_FILE="/Users/jimsander/.sops/jds-age.txt"
 
-which nvim 2>/dev/null >&2 && \
-    alias vi="nvim" && \
-    alias vim="nvim" && \
-    alias view="nvim -R"
-
 alias sc="shellcheck"
 
-source_if_exists kuberc
+export PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:$PATH"
+

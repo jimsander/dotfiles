@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='/Users/jimsander/repos/Automation_sipp/documentation'
+let g:netrw_dirhist_7='/Users/jimsander/Documents'
+let g:netrw_dirhist_6='/Users/jimsander/RBR_OneDrive_CRD/client_wsi/April27/2023-04-28-09-42-39/conversa/call-push-service-75bbd5fd68-ccljw'
+let g:netrw_dirhist_5='/Users/jimsander/RBR_OneDrive_CRD/client_wsi/April27/2023-04-28-09-42-39/conversa/call-push-service-75bbd5fd68-k96bl'
+let g:netrw_dirhist_4='/Users/jimsander/.bash_sessions'
+let g:netrw_dirhist_3='/opt/homebrew'
+let g:netrw_dirhist_2='/Users/jimsander/Documents'
+let g:netrw_dirhist_1='/Users/jimsander/repos/Automation/conversa-manager'
+let g:netrw_dirhist_0='/Users/jimsander/repos/Automation/conversa-manager/scripts'
+let g:netrw_dirhist_9='/Users/jimsander/repos/DevOps/jds-sandbox/azure.tf'

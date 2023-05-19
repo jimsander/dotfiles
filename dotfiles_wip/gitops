@@ -6,7 +6,6 @@ flux
 kubectl
 kustomize
 nerdctl
-
 LIST
 
 [[ -n "$(which nerdctl)" ]] && alias docker="nerdctl"  
