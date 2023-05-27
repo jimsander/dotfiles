@@ -7,5 +7,13 @@ case $- in
     *i*) ;;
       *) return;;
 esac
+
+source_ifexists () {
+  local file
+  for file in $@; do 
+    [[ -f "$file" ]] && source "$file"
+  done
+}
+
 [[ -f ${HOME}/.bashrc" ]] && source ${HOME}/.bashrc
 

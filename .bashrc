@@ -74,7 +74,7 @@ which helm 2>/dev/null >&2 && \
   complete -C /opt/homebrew/bin/terraform terraform
 
 set -o vi
-export AWS_DEFAULT_PROFILEj=platformdev
+export AWS_DEFAULT_PROFILE=platformdev
 export AWS_PROFILE=${AWS_DEFAULT_PROFILE:-jds-east1}
 
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
@@ -88,3 +88,4 @@ alias sc="shellcheck"
 
 export PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:$PATH"
 
+[[ -f "$HOME/.bash_jdshomelab" ]] && source ~/.bash_jdshomelab
